@@ -113,6 +113,32 @@
 // }
 // Counter(6 , 9);
 
+// Q9	Write a nested function that computes hypotenuse of a right angle triangle. 
+// Hypotenuse2 = Base2 + Perpendicular2
+// Take base and perpendicular as inputs.
+// Outer function : calculateHypotenuse()
+// Inner function: calculateSquare()
+
+// function calculateHypotenuse(B,P){
+//     function calculateSquare(B,P){
+//         var H=+(B*B)+ +(P*P);
+//         console.log("Hypotenuse is equal to "+H)
+
+//     }
+//     calculateSquare(2,3);
+ 
+// }
+// calculateHypotenuse(2,3);
+
+// Q10	Write a function that writes variable length arguments list in your browser.
+
+// function len(a){
+//     var b=a.length;
+//     console.log(b);
+// }
+// len("Strings");
+
+
 // Q11 Write a function that accepts any number of arguments & find largest of the number
 
 // function findLargest(...args) {
@@ -156,6 +182,14 @@
 // }
 // sum([67,98,70,30]);
 
+// Q15	Execute & monitor the output of following JS program:
+
+// var param = function inner() { 
+//     return typeof inner; 
+// }
+// alert(param()); 
+
+
 // Q16	Write a function that computes power of a number. E.g. 23 is 8.
 // function powerNumber(){
 //    var result= 2**3
@@ -163,6 +197,57 @@
     
 // }
 // powerNumber()
+
+// Q17	Write a function that simulates a dice & returns a random dice value.
+
+// var h4 = document.querySelector('#head-one');
+// var h4 = document.querySelector('#head-two');
+// var h4 = document.querySelector('#head-three');
+
+// function rollButton(){
+//     h4.innerHTML = "";
+//     var x = Math.floor(Math.random() * 6) +1;
+//     var y = Math.floor(Math.random() * 6) +1;
+//     var z = Math.floor(Math.random() * 6) +1;
+//     h4.innerHTML += `${x} <br>`;
+//     h4.innerHTML += `${y} <br>`;
+//     h4.innerHTML += `${z} <br>`;
+    
+// }
+
+// Q18	Write a JavaScript function that reverse a number. 
+// Example x = 32243;
+// EXPECTED OUTPUT : 34223
+
+// function reverse(number){
+//     number = number+"" //convert the number into string
+//     return number.split("").reverse().join("");
+// }
+// var num = reverse(567)
+// console.log(num);
+
+// Q19	Write a JavaScript function that checks whether a passed string is palindrome or not?  
+// A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam.
+
+// function palindrome(str){
+//     var reversed = str.split("").reverse().join("");
+//     if(str==reversed){
+//         console.log(str + " is a palindrome");
+        
+//     }else{
+//         console.log(str + " is not a palindrome");
+        
+//     }
+// }
+// palindrome("madam");
+
+// Q20	Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case. 
+// EXAMPLE STRING : 'the quick brown fox' 
+// EXPECTED OUTPUT : 'The Quick Brown Fox'
+
+
+
+
 
 // Q26
 // function Age(birthyear, currentYear){

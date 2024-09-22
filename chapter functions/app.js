@@ -33,11 +33,11 @@
 // var num1 = +prompt("enter number 1");
 // var num2 = +prompt("enter number 2");
 
-// function sum(){
+// function add(){
 //     console.log(`The sum of two numbers is ${num1 + num2}`);
     
 // }
-// sum()
+// add()
 
 // Q5 Write a function that takes three arguments num1, num2 & operator & compute the desired operation. Return and show the desired result in your browser.
 
@@ -63,12 +63,12 @@
 // }
 // return result;
 // }
-// var sum1 = calculator(20,50 ,'+');
-// var sum2 = calculator(20,50 ,'-')
-// var sum3 = calculator(20,50 ,'*');
-// var sum4 = calculator(20,50 ,'/');
+// var sum1 = calculator(30,70 ,'+');
+// var sum2 = calculator(80,50 ,'-')
+// var sum3 = calculator(2,8 ,'*');
+// var sum4 = calculator(8,6 ,'/');
 
-// console.log(` addition of 20 and 50 is ${sum1} , subtraction of 20 and 50 is ${sum2}, Multiplication of 20 and 50 is ${sum3}, Division of 20 and 50 is ${sum4}`);
+// console.log(` addition of 30 and 70 is ${sum1} , subtraction of 80 and 50 is ${sum2}, Multiplication of 2 and 8 is ${sum3}, Division of 8 and 6 is ${sum4}`);
 
 // Q6 Write a function that squares its argument.
 
@@ -114,11 +114,6 @@
 // Counter(6 , 9);
 
 // Q9	Write a nested function that computes hypotenuse of a right angle triangle. 
-// Hypotenuse2 = Base2 + Perpendicular2
-// Take base and perpendicular as inputs.
-// Outer function : calculateHypotenuse()
-// Inner function: calculateSquare()
-
 // function calculateHypotenuse(B,P){
 //     function calculateSquare(B,P){
 //         var H=+(B*B)+ +(P*P);
@@ -141,16 +136,17 @@
 
 // Q11 Write a function that accepts any number of arguments & find largest of the number
 
-// function findLargest(...args) {
-//         if (args.length === 0) {
-//             return "No numbers provided";
+// function findLargest(){
+//     var array = [30,70,41,7,6];
+//     var max = array[0];
+//     for(var i = 0; i<array.length;i++){
+//         if(array[i]>max){
+//             max = array[i];
 //         }
-//         return Math.max(...args);
-//     }
-    
-//     console.log(findLargest(5, 10, 3, 8));  // Output: 10
-//     console.log(findLargest(-5, -10, -3, -8));  // Output: -3
-//     console.log(findLargest());  // Output: No numbers provided
+// }    
+// console.log(`The largest number in array is ${max}`);
+// }
+// findLargest()
 
 // Q12.	Write a function that calculates the area of a rectangle.
 // A = width * height
@@ -158,22 +154,33 @@
 // a.	Arguments as values
 // b.	Arguments as variables
 
-// function rectangel(width,height){
-//  var area=width*height
-//  console.log(area);
+// function area(width,height){
+//     var A=width*height;
+//     console.log(A);
+// }
+// area(2,7);
  
 // }
 // rectangel(400,300);
 
 // Q13 	Write a function that receives an array & returns the sorted array.
 
-// function sortArry(arry){
-//        let result= arry.sort();
-//        console.log(result)
+// function sortArray(array){
+//        var finalOutput= array.sort();
+//        console.log(finalOutput)
 // }
-//  sortArry([45,86,96,75]);
+//  sortArray([67,89,76,52,15]);
 
 //  Q14.	Write a function that takes numbers array, sums its elements & returns the sum.
+
+// function sumArr(){
+    
+//     var sum = arr[0]+arr[1]+arr[2]+arr[3]+arr[4]+arr[5];
+//     console.log(sum);
+// }
+// var arr=[1,2,3,45,5,4]
+// sumArr(arr);
+
 
 // function sum(arry){
 //     var result= arry.reduce((accumulator, currentValue) => accumulator+currentValue );
@@ -245,8 +252,52 @@
 // EXAMPLE STRING : 'the quick brown fox' 
 // EXPECTED OUTPUT : 'The Quick Brown Fox'
 
+// function capitalize(sentence){
+//     var str = sentence.split(" ")
+//     for(i=0; i<str.length;i++){
+//         str [i] = str[i][0].toUpperCase() + str[i].substring(1);
+        
+//     }
+//     return str.join(" ");
+    
+// }
+// console.log(capitalize("the quick brown fox"));
 
 
+// Q21.	Write a JavaScript function that accepts a string as a parameter and find the longest word within the string. 
+// EXAMPLE STRING : 'Web Development Tutorial' 
+// EXPECTED OUTPUT : 'Development'
+
+// function longestWord(string){
+//     var longest = 0;
+//     var numberValue;
+//     var arr = string.split(" ");
+//     for(i=0; i<arr.length;i++){
+//         if(arr.length >longest){
+//             // longest = arr[i].length;
+//             numberValue = arr[i];
+//         }
+//     }
+//     console.log("" + numberValue);
+    
+// }
+// longestWord("web development")
+
+// Q22	Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string. 
+
+// EXAMPLE STRING : 'The quick brown fox' 
+// EXPECTED OUTPUT : 5
+
+// function countWovels(str){
+//     var reg = /[aeiou]/gi;
+//     var match = str.match(reg);
+//     console.log(match.length);
+    
+
+// }
+// countWovels('The quick brown fox')
+
+// Q23
 
 
 // Q26
